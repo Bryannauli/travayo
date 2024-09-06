@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Travayo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><h1 class="header">Travayo</h1></header>
+        <h3 class="subheader">Ayo Travel Sama-Sama</h3>
+        <fieldset class="border">
+            <table>
+                <legend class="legen">Data Akun</legend>
+                <form>
+                <tr>
+                    <td><label for="un" class="labal">Username</label></td>
+                    <td><input type="text" name="un" id="un" placeholder="Username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pw" class="labal">Password</label></td>
+                    <td><input type="password" name="pw" id="pw" placeholder="Password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pw2" class="labal">Konfirmasi Password</label></td>
+                    <td><input type="password" name="pw2" id="pw2" placeholder="Konfirmasi Password" required></td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td><input type="submit" value="Daftar" class="buton1"><input type="reset" value="Reset" class="buton2"></td>
+                </tr>
+            </form>
+            </table>
+        </fieldset>
+        <fieldset class="border">
+            <table>
+                <legend class="legen">Booking Penerbangan</legend>
+                <form>
+                <tr>
+                    <td><label for="np" class="labal">Nama</label></td>
+                    <td><input type="text" name="np" id="np" placeholder="Nama" required></td>
+                </tr>
+                <tr>
+                    <td class="labal">Jenis Kelamin</td>
+                    <td><input type="radio" name="jk" id="jk" value="lk" required><label for="jk" class="pihan">Laki-Laki</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="jk" id="jk" value="pr" required><label for="jk" class="pihan">Perempuan</label></td>
+                </tr>
+                <tr>
+                    <td><label for="tl" class="labal">Tanggal Lahir</label></td>
+                    <td><input type="date" name="tl" id="tl" required></td>
+                </tr>
+                <tr>
+                    <td><label for="em" class="labal">Email</label></td>
+                    <td><input type="email" name="em" id="em" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="jt" class="labal">Jumlah Tiket</label></td>
+                    <td><input type="number" name="jt" id="jt" placeholder="Jumlah Tiket" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mp" class="labal">Maskapai Penerbangan</label></td>
+                    <td><input list="mp" placeholder="Maskapai Penerbangan" required></td>
+                    <td><datalist id="mp">
+                        <option value="AirAsia">
+                        <option value="Garuda Indonesia">
+                        <option value="Lion Air">
+                        <option value="Sriwijaya Air">
+                        <option value="Batik Air">
+                    </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="jp" class="labal">Jenis Penerbangan</label></td>
+                    <td><input list="jp" placeholder="Jenis Penerbangan" required></td>
+                    <td><datalist id="jp">
+                        <option value="Ekonomi">
+                        <option value="Eknonomi Premium">
+                        <option value="Bisnis">
+                        <option value="First Class">
+                        <option value="Quiet Zone">
+                    </datalist></td>
+                </tr>
+                <tr>
+                    <td class="labal">Fasilitas Tambahan</td>
+                    <td><input type="checkbox" name="a" id="a" value="a"><label for="a" class="pihan">Bagasi</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="b" id="b" value="b"><label for="b" class="pihan">Waiting Lounge</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="c" id="c" value="c"><label for="c" class="pihan">Makanan dan Minuman</label></td>
+                </tr>
+                <tr>
+                    <td><label for="kt" class="labal">Keterangan Tambahan</label></td>
+                    <td><textarea name="kt" id="kt">Masukkan Keterangan Tambahan</textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="checkbox" name="k" id="k" value="k"><label for="k" class="waning">Konfirmasi Booking Penerbangan</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Book" class="buton1"><input type="reset" value="Reset" class="buton2"></td>
+                </tr>
+            </form>
+            </table>
+        </fieldset>
+    </body>
+</html>
